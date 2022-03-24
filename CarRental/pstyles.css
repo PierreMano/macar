@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body  {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#000000 no-repeat center top;
+	color: #ffffff;
+}
+a {
+	color:#ff9c00;
+	text-decoration:underline;
+}
+a:hover {
+	color:#ff9c00;
+	text-decoration:none;
+}
+#container { 
+	width: 100%; 
+} 
+#header {
+	width:100%; 
+}
+.logoBackground {
+	background: rgba(4, 24, 54, 0.99);
+	width:300px;
+	height: 100px;
+}
+.logo {
+	color:#ff9c00;
+	padding:40px;
+
+}
+.author {
+	padding:0 0 10px 30px;
+	color:#707070;
+}
+.author a {
+	color:#707070;
+}
+.menu {
+	background:url(images/menuBackground.png) repeat-x left top;
+	height:103px;
+	text-align:center;
+	
+}
+.menu ul {
+	margin:0;
+	padding-top:32px;
+}
+.menu li {
+	list-style:none;
+	display:inline;
+	padding:20px 15px 0 15px;
+}
+.menu li a {
+	color:#ffffff;
+	font-size:24px;
+	text-decoration:none;
+}
+.menu li a:hover {
+	color:#ff9c00;
+	font-size:24px;
+	text-decoration:none;
+}
+.menu #active a {
+	color:#ff9c00;
+	font-size:24px;
+	text-decoration:none;
+}
+.allContent {
+	width:800px;
+	margin:0 auto;
+	padding:130px 0 0 0;
+}
+.leftContent p, .rightContent p {
+	padding:40px;
+}
+.leftContent {
+	float:left;
+	width:400px;
+	background:url(images/leftContent.png) repeat-y left top;
+}
+.rightContent {
+	width:364px;
+	background:url(images/rightContent.png) repeat-y left top;
+	right: 0;
+} 
+.rightContent ul {
+	margin:0;
+	padding:0 40px;
+}
+.rightContent li {
+	list-style:none;
+	padding:0 0 20px 0;
+}
+#footer {
+	text-align:center;
+	color:#707070;
+	padding:30px 0;
+} 
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.centerContent {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	background-color: #05224f;
+}
+centereport{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #05224f;
+}
+.gradient-custom-3 {
+	/* fallback for old browsers */
+	background: #84fab0;
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+.gradient-custom-4 {
+	/* fallback for old browsers */
+	background: #84fab0;
+
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+.body_content{
+	display: flex;
+	flex-direction: row;
+}
+.section-b{
+	width: 100%;
+	height: 100%;
+}
+.section_b{
+    display: flex;
+    flex-direction: column;
+}
+.rental-card{
+    width: 100%;
+}

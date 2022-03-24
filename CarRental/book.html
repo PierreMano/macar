@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Book cars based availability
+-->
+<html>
+    <head>
+        <title>MaCar Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <marquee><h3>Rates so low, you won’t think twice</h3></marquee>
+		<div class="logoBackground">
+  	<div class="logo"><h3>BOOKINGS</h3></div>
+    
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="customer.html">Customers</a></li>
+			<li><a href="chauffeur.html">Driver</a></li>
+			<li><a href="cars.html">Cars</a></li>
+			<li id="active"><a href="">Book Car</a></li>
+			<li><a href="return.html">Return Car</a></li>
+			<li><a href="report.html">Report</a></li>
+		</ul>
+	</div>
+	<div class="body_content "style="background-color: #1F1B24">
+
+
+		<section class="vh-80 col-sm-6" )>
+				<div class="mask d-flex align-items-center h-100">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+								<div class="card" style="border-radius: 15px;margin-top: 15px;">
+									<div class="card-body">
+										<h2 class="text-uppercase text-center mb-5">BOOK A CAR</h2>
+
+										<form action="available.php" method="post">
+
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example1cg" name="cbid" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example1cg">Enter Customer ID</label>
+											</div>
+
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example3cg" name="Sdate" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example3cg">Enter date yyyy-mm-dd</label>
+											</div>
+											<div class="form-outline mb-4">
+												<select type="text" id="form3Example3cg" name="Ctype" class="form-control form-control-lg">
+													<option>Compact</option>
+													<option>Medium</option>
+													<option>Large</option>
+													<option>SUV</option>
+													<option>Van</option>
+													<option>Truck</option>
+												</select><br/>
+												<label class="form-label" for="form3Example3cg">Select Car Type</label>
+											</div>
+											<div class="form-outline mb-4">
+												<select type="text" id="form3Example3cg" name="Rtype" class="form-control form-control-lg">
+													<option>Daily</option>
+													<option>Weekly</option>
+												</select><br/>
+												<label class="form-label" for="form3Example3cg">Rent Type</label>
+											</div>
+											<div class="form-outline mb-4">
+												<select type="text" id="form3Example3cg" name="Days" class="form-control form-control-lg">
+													<option>0</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+													<option>4</option>
+													<option>5</option>
+													<option>6</option>
+													<option>7</option>
+												</select>
+												<label class="form-label" for="form3Example3cg">No of days</label>
+											</div>
+											<div class="form-outline mb-4">
+												<select type="text" id="form3Example3cg" name="Weeks" class="form-control form-control-lg">
+													<option>0</option>
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+												</select>
+												<label class="form-label" for="form3Example3cg">No of weeks</label>
+											</div>
+											<div class="d-flex justify-content-center">
+												<input type="submit" name="check" value="Check Availability" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+											</div>
+											<div class="form-outline mb-4">
+												<label class="form-label" for="form3Example3cg">Enter Vehicule id</label>
+												<input type="text" id="form3Example3cg" name="Vehicleid" class="form-control form-control-lg" />
+											</div>
+											<div class="d-flex justify-content-center">
+												<input type="submit" name="book" value="Book" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		<div class="section_b">
+			<section class=" section-b vh-80 col-sm-4" >
+				<div class="mask d-flex align-items-center h-100">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+								<div class="card rental-card" style="width: max-content; border-radius: 15px;margin-top: 15px;">
+									<div class="card-body ">
+										<div class="rightContent">
+											<b><form action="viewrental.php" method="post" >
+												<h3 class="text-uppercase">VIEW ACTIVE & SCHEDULED RENTALS</h3>
+												<div class="d-flex justify-content-center">
+													<input type="submit" name="submit1" value="View" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+												</div>
+											</form></b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class=" section-b vh-80 col-sm-4" >
+				<div class="mask d-flex align-items-center h-100">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+								<div class="card" style="width: max-content;border-radius: 15px;margin-top: 15px;">
+									<div class="card-body">
+										<div class="rightContent">
+											<div class="rightContent">
+												<SCRIPT LANGUAGE="JavaScript">
+
+													var num=1
+													img1 = new Image ()
+													img1.src = "images/1.jpg"
+													img2 = new Image ()
+													img2.src = "images/2.jpg"
+													img3 = new Image ()
+													img3.src = "images/3.jpg"
+													img4 = new Image ()
+													img4.src = "images/4.jpg"
+													img5 = new Image ()
+													img5.src = "images/5.jpeg"
+													img6 = new Image ()
+													img6.src = "images/6.jpg"
+
+													text1 = "MEDIUM"
+													text2 = "S.U.V"
+													text3 = "COMPACT"
+													text4 = "LARGE"
+													text5 = "TRUCK"
+													text6 = "VAN"
+
+													function slideshowUp()
+													{
+														num=num+1
+														if (num==7)
+														{num=1}
+														document.mypic.src=eval("img"+num+".src")
+														document.raj.iname.value=eval("text"+num)
+													}
+
+													function slideshowBack()
+													{
+														num=num-1
+														if (num==0)
+														{num=6}
+														document.mypic.src=eval("img"+num+".src")
+														document.raj.iname.value=eval("text"+num)
+													}
+
+												</SCRIPT>
+												<!-- The Image and Form Codes are Below -->
+												<CENTER>
+													<IMG SRC="images/1.jpg" NAME="mypic" BORDER=0 HEIGHT="100%" WIDTH="100%">
+													<FORM NAME="raj">
+														<div class="d-flex justify-content-center">
+															<input type="text" width="100" name="iname" value="Medium" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+														</div>
+													</FORM><A HREF="JavaScript:slideshowBack()"> Back</A>  <A HREF="JavaScript:slideshowUp()"> Next</A>
+												</CENTER>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			</div>
+		</div>
+
+	
+	</body>
+	</html>
