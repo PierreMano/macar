@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Register and view Drivers
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+        <link href="pstyles.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+    <body>
+        <marquee><h3>Rates so low, you won’t think twice</h3></marquee>
+		<div class="logoBackground">
+  	<div class="logo"><h3>CHAUFFEUR<h3></div>
+    
+  </div>
+		<div class="menu">
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+		<li id="active"><a href="">Driver</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="book.html">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+		</div>
+
+		<div class="body_content "style="background-color: #1F1B24">
+
+
+			<section class="vh-80 col-sm-8" )>
+				<div class="mask d-flex align-items-center h-100">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+								<div class="card" style="border-radius: 15px;margin-top: 15px;">
+									<div class="card-body p-5">
+										<h2 class="text-uppercase text-center mb-5">Register Driver</h2>
+
+										<form action="regchauffeur.php" method="post">
+
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example1cg" name="fname" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example1cg">Fist Name</label>
+											</div>
+
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example3cg" name="lname" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example3cg">Last Name</label>
+											</div>
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example3cg" name="age" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example3cg">Age</label>
+											</div>
+
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example3cg" name="mobile" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example3cg">Mobile</label>
+											</div>
+											<div class="form-outline mb-4">
+												<input type="text" id="form3Example3cg" name="dlno" class="form-control form-control-lg" />
+												<label class="form-label" for="form3Example3cg">Driving License No</label>
+											</div>
+											<div class="d-flex justify-content-center">
+												<input type="submit" name="submit" value="Register" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class=" section-b vh-80 col-sm-4" >
+				<div class="mask d-flex align-items-center h-100">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<div class="col-12 col-md-9 col-lg-7 col-xl-6">
+								<div class="card" style="width: max-content;border-radius: 15px;margin-top: 15px;">
+									<div class="card-body">
+										<div class="rightContent">
+											<b><form action="viewchauffeur.php" method="post" >
+												<h3 class="text-uppercase">Driver</h3>
+												<input type="submit" value="View" class="btn btn-success btn-block btn-lg gradient-custom-4 text-body"/>
+											</form></b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+  </div>
+	</body>
+	</html>
